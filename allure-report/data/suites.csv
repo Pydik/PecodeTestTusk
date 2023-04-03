@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Mon Apr 03 23:15:52 EEST 2023","Mon Apr 03 23:16:34 EEST 2023","42401","","Verify if the price filter working correctly for the following marketplaces","","","","passes",""
+"failed","Mon Apr 03 23:14:36 EEST 2023","Mon Apr 03 23:15:14 EEST 2023","37439","","login with valid credentials","","","","login with valid credentials",""
+"passed","Mon Apr 03 23:15:27 EEST 2023","Mon Apr 03 23:15:39 EEST 2023","11419","","Search the item","","","","passes",""
+"failed","Tue Apr 04 00:00:35 EEST 2023","Tue Apr 04 00:01:05 EEST 2023","30489","","Add items to the basket","","","","passes",""

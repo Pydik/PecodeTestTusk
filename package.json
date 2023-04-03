@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "ui-regressioun-allure": "cypress run --browser chrome --spec cypress/e2e/**.cy.js --env allure=true",
+    "allure:report": "allure generate allure-results --clean -o allure-report"
+  },
+
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.37.0",
+    "cypress": "^12.9.0"
+  },
+  "dependencies": {
+    "cypress-xpath": "^2.0.1"
+  }
+}
