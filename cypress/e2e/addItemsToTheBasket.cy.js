@@ -30,6 +30,5 @@ describe('Add items to the basket', () => {
         const sortedArray = [...inputArray].sort((a,b)=>a-b);
         expect(inputArray).to.deep.equal(sortedArray);
     });
-    
   })
 })
