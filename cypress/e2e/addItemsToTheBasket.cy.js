@@ -13,13 +13,13 @@ describe('Add items to the basket', () => {
     compAndLaptops.clickLaptops()
     cy.intercept('POST','https://api-analytics.rozetka.com.ua/bulk').as('addtobasket')
     laptops.clickFirstElementInList()
-    cy.wait('@addtobasket',{timeout: 15000});
+    cy.wait('@addtobasket');
     cy.visit('https://rozetka.com.ua')
     mainPage.clickSmartphoneAndTV()
     smartphoneAndTV.clickMobilephone()
     cy.intercept('POST','https://api-analytics.rozetka.com.ua/bulk').as('addtobasket')
     mobilephone.clickFirstElementInList()
-    cy.wait('@addtobasket',{timeout: 15000});
+    cy.wait('@addtobasket');
     mobilephone.clickBusket()
 
     let inputArray = []
