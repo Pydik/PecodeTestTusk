@@ -1,8 +1,6 @@
 # PecodeTestTusk
 In this project, I performed tasks with PECODE on the cypress (js) framework
 
-# I want to warn you that the test "Add items to the basket" is executed in cypress, but not in Allure, I do not know why
-
 In order to use it, you first need to install cypress
 
 # Installing Cypress
