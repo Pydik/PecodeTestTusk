@@ -4,9 +4,11 @@ class LaptopsPage {
     get cbasus (){return cy.get('[data-id="ASUS"]')}
     get cbacer (){return cy.get('[data-id="Acer"]')}
     get rozetkaLogo (){return cy.get('[alt="Rozetka Logo"]')}
-    get firstbuscket (){return cy.get('[data-goods-id="288376303"] .buy-button ')}
-    get firstElementInList (){return cy.get('[data-goods-id="288376303"] [class="goods-tile__heading ng-star-inserted"]')}
-    get openDD (){return cy.get('[class="select-css ng-untouched ng-pristine ng-valid ng-star-inserted"]')}
+    get firstbuscket (){return cy.get('[data-goods-id="288376303"] .buy-button')}
+    get firstElementInList (){return cy.get('[data-goods-id="288376303"] .goods-tile__title')}
+    get openDD (){return cy.get('select.select-css')}
+    get titleName (){return cy.get('span.goods-tile__title')}
+    get allPrice (){return cy.get('span.goods-tile__price-value')} 
 
     clickCBrozetka(){
         this.cbrozetka.click()

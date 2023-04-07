@@ -3,13 +3,13 @@ class MainPage {
     get laptopAndComp(){return cy.get('[href="https://rozetka.com.ua/ua/computers-notebooks/c80253/"][class="menu-categories__link"]')}
     get smartphoneAndTV(){return cy.get('[href="https://rozetka.com.ua/ua/telefony-tv-i-ehlektronika/c4627949/"][class="menu-categories__link"]')}
     get searchField(){return cy.get('[name="search"]')}
-    get findBtn(){return cy.get('[class="button button_color_green button_size_medium search-form__submit ng-star-inserted"]')}
-    get headerBtn(){return cy.get('[class="header__button ng-tns-c113-1"]')}
+    get findBtn(){return cy.get('button.button_color_green')}
+    get headerBtn(){return cy.get('[class="header__button ng-tns-c65-1"]')}
     get loginBtn(){return cy.xpath('//button[contains(text(),"Вхід")]')}
     get emailField(){return cy.get('#auth_email')}
     get passwordField(){return cy.get('#auth_pass')}
-    get logBtn(){return cy.get('[class="button button--large button--green auth-modal__submit ng-star-inserted"]')}
-    get errorMesseg(){return cy.get('[class="error-message ng-star-inserted"]')}
+    get logBtn(){return cy.get('button.auth-modal__submit')}
+    get errorMessege(){return cy.get('p.error-message')}
 
     launchApplication() {
         cy.visit('https://rozetka.com.ua/ua/')

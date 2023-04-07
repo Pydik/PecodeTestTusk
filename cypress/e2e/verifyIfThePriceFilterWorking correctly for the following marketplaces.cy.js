@@ -16,7 +16,7 @@ describe('Verify if the price filter working correctly for the following marketp
     cy.wait(4000)
 
     let inputArray = []
-    cy.get('span.goods-tile__price-value').each(($el, index) => {
+    laptops.allPrice.each(($el, index) => {
         inputArray[index] = Number(($el.text()).replace(/[^0-9.]/g, ''));
     }).then(() => {
         const sortedArray = [...inputArray].sort((a,b)=>a-b);

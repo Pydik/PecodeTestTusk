@@ -1,6 +1,6 @@
 class SmartphoneAndTV {
     
-    get mobilephone (){return cy.get('[href="https://rozetka.com.ua/ua/mobile-phones/c80003/"][class="tile-cats__picture"]')}
+    get mobilephone (){return cy.get('a.tile-cats__picture[href*="c80003"]')}
     
     clickMobilephone(){
         this.mobilephone.click()

@@ -1,6 +1,6 @@
 class CompAndLaptopsPage {
     
-   get laptops (){return cy.get('[class="tile-cats__picture"][href="https://rozetka.com.ua/ua/notebooks/c80004/"]')}
+   get laptops (){return cy.get('a.tile-cats__picture[href*="c80004"]')}
    
    clickLaptops(){
     this.laptops.click()
